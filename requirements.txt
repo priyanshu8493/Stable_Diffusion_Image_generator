@@ -1,0 +1,30 @@
+# Core Django Project
+Django>=4.2,<5.0
+
+# Diffusion Models
+diffusers[torch]==0.27.2
+transformers==4.39.3
+torch==2.2.1
+torchaudio==2.2.1
+scipy>=1.10.0
+numpy>=1.24.0
+
+# Image handling
+Pillow>=10.0.0
+
+# For progress bars in Diffusers (optional)
+tqdm>=4.65.0
+
+# If using CUDA (optional, if you want GPU acceleration)
+# Use the following if you're planning on using a CUDA version of PyTorch
+# Make sure this matches the actual CUDA version on that machine.
+# torch==2.2.1+cu121
+# torchvision==0.17.1+cu121
+# torchaudio==2.2.1+cu121
+# --find-links https://download.pytorch.org/whl/cu121
+
+# Optional: If using python-dotenv or similar for config
+# python-dotenv
+
+# Optional: For HTTPS image response, if needed
+# requests
