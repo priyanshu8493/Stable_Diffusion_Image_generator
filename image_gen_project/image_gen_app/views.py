@@ -29,7 +29,6 @@ class GenerateImageView(APIView):
         prompt = request.data.get('prompt')
         if not prompt:
             return Response({"error": "Prompt is required"}, status=status.HTTP_400_BAD_REQUEST)
-
         try:
             # Generate image
             image = pipe(prompt).images[0]
