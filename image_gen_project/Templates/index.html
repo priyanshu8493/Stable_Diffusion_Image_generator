@@ -51,7 +51,7 @@
       // Optional: Add a loading animation
       resultDiv.classList.add("hidden");
 
-      const res = await fetch("/api/generate/", {
+      const res = await fetch("/image-generator/api/generate/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
